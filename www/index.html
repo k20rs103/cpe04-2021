@@ -41,6 +41,9 @@
         $('#btnD').click(function(e) {
             btnDClick(e);
          });
+        $('#btnE').click(function(e) {
+            btnEClick(e);
+         });
         init();
     });
     
@@ -164,6 +167,7 @@
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
         $('#btnD').prop('disabled', false);
+        $('#btnE').prop('disabled', false);
         
     }
 
@@ -208,6 +212,10 @@
       function btnDClick(e){
         alarm();
     }
+       // ButtonEがクリックされた時の処理
+      function btnEClick(e){
+       active = true;
+    }
 
   
     
@@ -241,6 +249,7 @@
     <button id="btnB">Stop</button>  
     <button id="btnC">Set</button>  
     <button id="btnD">Sound</button> 
+    <button id="btnE">StCan</button> 
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
 </body>
